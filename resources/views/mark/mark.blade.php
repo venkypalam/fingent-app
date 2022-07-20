@@ -50,7 +50,7 @@
                             <td>{{ $mark->history }}</td>
                             <td>{{ $mark->term }}</td>
                             <td>{{ $mark->total_marks }}</td>
-                            <td>{{ $mark->created_at }}</td>
+                            <td>{!! date('M d, Y H:i A', strtotime($mark->created_at)) !!}</td>
                             <td>
                             <div class="table-controls">
                                 <a href="#" class="edit bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" data-type="edit" data-id="{{ $mark->id }}">Edit</a>                                                                                  
